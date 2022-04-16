@@ -1,0 +1,19 @@
+:root {
+
+    --black: #000000;
+    --cherry: #d7224c;
+    --forgiveness-red: #B31E2D;
+    --desert-storm: #f8f8f8;
+    --midnight-pearl: #70316e;
+    --prussian-blue: #0d3258;
+    --white: #ffffff;
+
+    --font-family-roboto: "Roboto", Helvetica;
+    --font-family-thasadith: "Thasadith", Helvetica;
+    --font-family-zilla_slab: "Zilla Slab", Helvetica;
+}
+
+h1 {
+    text-align: center;
+    color: var(--midnight-pearl);
+}
