@@ -33,14 +33,24 @@ body {
 }
 
 .header {
-  text-align: center;
+  /* background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  text-align: center; */
+
+  background-image: url("header-assets/purple-squiggles.svg"),
+  url("header-assets/purple-dots-green-square-right.svg"),
+    url("header-assets/blue-blob-center.png");
+  background-position: 0 0, 95% 5%, 50% 0;
+  background-size: 400px, 200px, 1000px;
+  background-repeat: no-repeat;
+
 }
 
-.blue-ellipse {
-  background-color: var(--prussian-blue);
-  border-radius: 672.5px/374.5px;
-  height: 749px;
-  margin-top: -628px;
+.header-text-wrapper {
+  padding-top: 190px;
 }
 
 h3 {
