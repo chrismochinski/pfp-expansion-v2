@@ -1,5 +1,4 @@
 :root {
-
     --black: #000000;
     --cherry: #d7224c;
     --forgiveness-red: #B31E2D;
@@ -8,12 +7,60 @@
     --prussian-blue: #0d3258;
     --white: #ffffff;
 
-    --font-family-roboto: "Roboto", Helvetica;
-    --font-family-thasadith: "Thasadith", Helvetica;
-    --font-family-zilla_slab: "Zilla Slab", Helvetica;
+    --roboto: "Roboto", Helvetica;
+    --thasadith: "Thasadith", Helvetica;
+    --zilla_slab: "Zilla Slab", Helvetica;
+}
+
+html {
+    width: 100%;
+
+}
+
+body {
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+}
+
+.row {
+    margin-inline: auto;
+    position: relative;
+    max-width: 1080px;
+    padding-left: max(10vw, calc((100vw - 1280px) / 2));
+    padding-right: max(10vw, calc((100vw - 1280px) / 2));
+    overflow: hidden;
+    max-width: 1280px;
+}
+
+.header {
+    text-align: center;
+}
+
+
+h3 {
+    color: var(--prussian-blue);
+    font-family: var(--thasadith);
+    font-size: 2rem;
 }
 
 h1 {
-    text-align: center;
-    color: var(--midnight-pearl);
+    color: var(--prussian-blue);
+    font-family: var(--zilla_slab);
+    font-size: 2.75rem;
+}
+
+p {
+    color: var(--black);
+    font-family: var(--roboto);
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
