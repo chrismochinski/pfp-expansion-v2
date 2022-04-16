@@ -1,66 +1,71 @@
 :root {
-    --black: #000000;
-    --cherry: #d7224c;
-    --forgiveness-red: #B31E2D;
-    --desert-storm: #f8f8f8;
-    --midnight-pearl: #70316e;
-    --prussian-blue: #0d3258;
-    --white: #ffffff;
+  --black: #000000;
+  --cherry: #d7224c;
+  --forgiveness-red: #b31e2d;
+  --desert-storm: #f8f8f8;
+  --midnight-pearl: #70316e;
+  --prussian-blue: #0d3258;
+  --white: #ffffff;
 
-    --roboto: "Roboto", Helvetica;
-    --thasadith: "Thasadith", Helvetica;
-    --zilla_slab: "Zilla Slab", Helvetica;
+  --roboto: "Roboto", Helvetica;
+  --thasadith: "Thasadith", Helvetica;
+  --zilla_slab: "Zilla Slab", Helvetica;
 }
 
 html {
-    width: 100%;
-
+  width: 100%;
 }
 
 body {
-    text-align: center;
-    background-color: var(--white);
-    margin: 0;
+  text-align: center;
+  background-color: var(--white);
+  margin: 0;
 }
 
 .row {
-    margin-inline: auto;
-    position: relative;
-    max-width: 1080px;
-    padding-left: max(10vw, calc((100vw - 1280px) / 2));
-    padding-right: max(10vw, calc((100vw - 1280px) / 2));
-    overflow: hidden;
-    max-width: 1280px;
+  margin-inline: auto;
+  position: relative;
+  max-width: 1080px;
+  padding-left: max(10vw, calc((100vw - 1280px) / 2));
+  padding-right: max(10vw, calc((100vw - 1280px) / 2));
+  overflow: hidden;
+  max-width: 1280px;
 }
 
 .header {
-    text-align: center;
+  text-align: center;
 }
 
+.blue-ellipse {
+  background-color: var(--prussian-blue);
+  border-radius: 672.5px/374.5px;
+  height: 749px;
+  margin-top: -628px;
+}
 
 h3 {
-    color: var(--prussian-blue);
-    font-family: var(--thasadith);
-    font-size: 2rem;
+  color: var(--prussian-blue);
+  font-family: var(--thasadith);
+  font-size: 2rem;
 }
 
 h1 {
-    color: var(--prussian-blue);
-    font-family: var(--zilla_slab);
-    font-size: 2.75rem;
+  color: var(--prussian-blue);
+  font-family: var(--zilla_slab);
+  font-size: 2.75rem;
 }
 
 p {
-    color: var(--black);
-    font-family: var(--roboto);
-    font-size: 1.25rem;
-    font-weight: normal;
+  color: var(--black);
+  font-family: var(--roboto);
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
