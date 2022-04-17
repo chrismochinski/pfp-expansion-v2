@@ -33,20 +33,18 @@ body {
 }
 
 .header {
-  /* background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  text-align: center; */
-
   background-image: url("header-assets/purple-squiggles.svg"),
-  url("header-assets/purple-dots-green-square-right.svg"),
+    url("header-assets/purple-dots-green-square-right.svg"),
+    url("header-assets/orange-blob-left.svg"),
+    url("header-assets/teal-blob-right.svg"),
+    url("header-assets/orange-blob-line-left.svg"),
+    url("header-assets/purple-blob-line-right.svg"),
+    url("header-assets/pink-blob-left.svg"),
+    url("header-assets/green-blob-right.svg"),
     url("header-assets/blue-blob-center.png");
-  background-position: 0 0, 95% 5%, 50% 0;
-  background-size: 400px, 200px, 1000px;
+  background-position: 0 4%, 96% 7%, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% -24%, 50% 0;
+  background-size: 25% auto, 9% auto, 30% auto, 20% auto, 20% auto, 23% auto, 30% auto, 28% auto, 60% auto;
   background-repeat: no-repeat;
-
 }
 
 .header-text-wrapper {
