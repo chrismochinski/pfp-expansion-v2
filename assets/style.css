@@ -7,6 +7,8 @@
   --prussian-blue: #0d3258;
   --white: #ffffff;
 
+  --hover-pink: #9a3897;
+
   --roboto: "Roboto", Helvetica;
   --thasadith: "Thasadith", Helvetica;
   --zilla_slab: "Zilla Slab", Helvetica;
@@ -42,8 +44,10 @@ body {
     url("header-assets/pink-blob-left.svg"),
     url("header-assets/green-blob-right.svg"),
     url("header-assets/blue-blob-center.png");
-  background-position: 0 4%, 96% 6%, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0, 50% 0;
-  background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto, 28.5% auto, 28% auto, 60% auto;
+  background-position: 0 4%, 96% 6%, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0,
+    50% 0;
+  background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto,
+    28.5% auto, 28% auto, 60% auto;
   background-repeat: no-repeat;
 }
 
@@ -55,30 +59,49 @@ body {
 }
 
 .header-text-wrapper {
- 
 }
 
 h3#launching {
   background-image: url("yellow-squiggle-longest.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 11em;
+  background-size: 10.5em;
   color: var(--prussian-blue);
   font-family: var(--thasadith);
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding-bottom: 11px;
   margin-bottom: -8px;
 }
 
-h1 {
+h1.title {
   color: var(--prussian-blue);
   font-family: var(--zilla_slab);
-  font-size: 2.75rem;
-  font-weight: 600
+  font-size: 2.25rem;
+  font-weight: 600;
 }
 
 #see-samples-button {
+  background-color: var(--midnight-pearl);
+  width: 180px;
+  height: 50px;
+  border-radius: 40px;
+  transition: 175ms ease-in-out;
+  font-size: 24px;
+  margin-inline: auto;
+}
 
+#see-samples-button a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--roboto);
+  line-height: 2;
+}
+
+#see-samples-button:hover {
+  background-color: var(--hover-pink);
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 0.25);
+  transition: 175ms ease-in-out;
+  transform: scale(1.025);
 }
 
 p {
@@ -86,6 +109,7 @@ p {
   font-family: var(--roboto);
   font-size: 1.25rem;
   font-weight: normal;
+  margin-top: 2.25rem;
 }
 
 .bold {
