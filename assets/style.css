@@ -12,9 +12,7 @@
   --roboto: "Roboto", Helvetica;
   --thasadith: "Thasadith", Helvetica;
   --zilla_slab: "Zilla Slab", Helvetica;
-}
 
-html {
   width: 100%;
 }
 
@@ -34,7 +32,30 @@ body {
   max-width: 1280px;
 }
 
-.header {
+.row:not(:first-of-type) {
+  margin-block: 1.75rem;
+}
+
+p {
+  color: var(--black);
+  font-family: var(--roboto);
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-top: 2.25rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* header section 1 */
+
+
+#header {
   background-image: url("header-assets/purple-squiggles.svg"),
     url("header-assets/purple-dots-green-square-right.svg"),
     url("header-assets/orange-blob-left.svg"),
@@ -44,7 +65,7 @@ body {
     url("header-assets/pink-blob-left.svg"),
     url("header-assets/green-blob-right.svg"),
     url("header-assets/blue-blob-center.png");
-  background-position: 0 4%, 96% 6%, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0,
+  background-position: 0 12px, 97% 13px, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0,
     50% 0;
   background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto,
     28.5% auto, 28% auto, 60% auto;
@@ -61,7 +82,7 @@ body {
 .header-text-wrapper {
 }
 
-h3#launching {
+h3.supertitle {
   background-image: url("yellow-squiggle-longest.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -104,18 +125,50 @@ h1.title {
   transform: scale(1.025);
 }
 
-p {
-  color: var(--black);
-  font-family: var(--roboto);
-  font-size: 1.25rem;
-  font-weight: normal;
-  margin-top: 2.25rem;
+/*div 2 - triple icon*/
+
+#triple-icon {
+  padding-block: 2.25rem;
+  background-color: var(--desert-storm);
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
-.bold {
-  font-weight: bold;
+#triple-icon .wrapper img.icon {
+  width: clamp(60px, 11vw, 145px);
+  height: auto;
 }
 
-.italic {
+.triple-icon-title {
+  color: var(--prussian-blue);
+  font-family: var(--zilla_slab);
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-block: 1.5rem 0;
+}
+
+h4.italic {
   font-style: italic;
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-block: 0;
+
+}
+
+#triple-icon .wrapper img.line {
+  width: 80%;
+  max-width: 210px;
+  height: 6px;
+
+}
+
+h5.supporting-text {
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-block: 0.25rem;
 }
