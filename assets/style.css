@@ -33,7 +33,7 @@ body {
 }
 
 .row:not(:first-of-type) {
-  margin-block: 2.5rem;
+  margin-block: 3rem;
 }
 
 p {
@@ -77,6 +77,9 @@ ul li {
   display: none;
 }
 
+img {
+  z-index: -100;
+}
 
 
 /* ------------- 1. header section ------------ */
@@ -196,7 +199,7 @@ h5.supporting-text {
   margin-block: 0.25rem;
 }
 
-/* ------------- 3. what to expect section ------------ */
+/* ------------- 3. what to expect section (and 5. new campus resources ------------ */
 
 #what-to-expect h1.main-title {
   background-image: url("red-straight-line.svg");
@@ -210,7 +213,7 @@ h5.supporting-text {
   padding-bottom: 8px;
 }
 
-.row-1, .row-2 {
+.row-1, .row-2, .row-3 {
   text-align: left;
   font-family: var(--roboto);
   display: flex;
@@ -220,7 +223,8 @@ h5.supporting-text {
 }
 
 .row-1 h1.row-title,
-.row-2 h1.row-title{
+.row-2 h1.row-title,
+.row-3 h1.row-title{
   background-repeat: no-repeat;
   background-position: left bottom;
   font-family: var(--zilla_slab);
@@ -241,11 +245,16 @@ h5.supporting-text {
   background-size: 7.5em;
 }
 
-.row-1 p, .row-2 p {
+.row-3 h1.row-title {
+  background-image: url("yellow-squiggle-longest.svg");
+  background-size: 10.75em;
+}
+
+.row-1 p, .row-2 p, .row-3 p {
   margin-block: 1rem;
 }
  
-.row-1 img, .row-2 img {
+.row-1 img, .row-2 img, .row-3 img {
   /* width: clamp(283px, 33vw, 507px); */
   width: 100%;
   height: auto;
@@ -259,6 +268,23 @@ h5.supporting-text {
   width: 78vw;
   margin-inline: auto;
   margin-block: 1rem;
+}
+
+/* -------------- 5. new campus resources section -------------- */
+
+
+#new-campus-resources {
+  background-color: var(--desert-storm);
+  padding-block: 3.5rem;
+}
+
+#new-campus-resources ul {
+  margin-bottom: 2rem;
+}
+
+#new-campus-resources p {
+  line-height: 1;
+
 }
 
 
@@ -295,8 +321,13 @@ h5.supporting-text {
 
   .column {
     width: 100%;
-    max-width: 100%;
     min-width: unset;
+    max-width: unset;
+    margin-inline: auto;
+  }
+
+  .column img {
+    min-width: 480px;
   }
 
   ul {
@@ -313,16 +344,21 @@ h5.supporting-text {
 
   .row {
     padding-inline: 6%;
+    margin-block: 0;
   }
 
+  p {
+    font-size: 1.5rem;
+  }
 
+/* ---- END GLOBAL TABLET STYLES ---- */
 
   h3.supertitle {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   h1.title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
 
@@ -341,10 +377,11 @@ h5.supporting-text {
   /* ------------- 3. what to expect TABLET ------------ */
 
   #what-to-expect h1.main-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-block: 0 1.25rem;
   }
 
-  .row-1, .row-2 {
+  .row-1, .row-2, .row-3 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -352,19 +389,24 @@ h5.supporting-text {
   }
 
   .row-1 h1.row-title,
-  .row-2 h1.row-title {
+  .row-2 h1.row-title,
+  .row-3 h1.row-title {
     background-position: center bottom;
     font-weight: 700;
     font-size: 3rem;
     margin-inline: auto;
-    margin-block: 0.5rem;
+    margin-block: 2rem -1rem;
   }
 
-  .row-1 p, .row-2 p {
+  .row-1 p, .row-2 p, .row-3 p {
     font-size: 1.5rem;
   }
 
   .row-1 img, .row-2 img {
+    margin-block: -1rem;
+  }
+
+  .row-1 img, .row-2 img, .row-3 img {
     width: 80%;
   }
 
@@ -372,6 +414,10 @@ h5.supporting-text {
 
   #well-strong-kind-chart img {
     width: 86vw;
+  }
+
+  #new-campus-resources img {
+    margin-block: 3rem 2rem;
   }
 
 }
