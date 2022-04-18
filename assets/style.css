@@ -477,11 +477,37 @@ h5.supporting-text {
     font-size: 1.75rem;
   }
 
+  /* ------------- 3. what to expect MOBILE ------------ */
+
+  .row-1 h1.row-title {
+    background-image: url("yellow-squiggle-shortest.svg");
+    background-size: 5em;
+  }
+
+  .row-1 img, .row-3 img {
+    margin-block: 1rem;
+  }
+
   /* ------ 4. well strong kind chart section ------ */
 
 
   #well-strong-kind-chart img {
     width: 91vw;
+    margin-block: unset;
   }
+
+
+  /* --------5. new campus resources section -------- */
+
+
+  #new-campus-resources {
+    padding-block: 1.5rem 2rem;
+  }
+
+  #new-campus-resources h1 {
+    background-image: url("yellow-squiggle-shortest.svg");
+    background-size: 5em;
+  }
+  
 
 }
