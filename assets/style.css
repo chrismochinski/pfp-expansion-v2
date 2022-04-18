@@ -33,7 +33,7 @@ body {
 }
 
 .row:not(:first-of-type) {
-  margin-block: 1.75rem;
+  margin-block: 2.5rem;
 }
 
 p {
@@ -255,7 +255,11 @@ h5.supporting-text {
 /* ------------- 4. well strong kind chart section ------------ */
 
 
-
+#well-strong-kind-chart img {
+  width: 78vw;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
 
 
 
@@ -305,6 +309,10 @@ h5.supporting-text {
   
   .display-tablet {
     display: block;
+  }
+
+  .row {
+    padding-inline: 6%;
   }
 
 
@@ -360,6 +368,11 @@ h5.supporting-text {
     width: 80%;
   }
 
+  /* ------------- 4. well strong kind chart TABLET ------------ */
+
+  #well-strong-kind-chart img {
+    width: 86vw;
+  }
 
 }
 
@@ -422,5 +435,11 @@ h5.supporting-text {
     font-size: 1.75rem;
   }
 
+  /* ------ 4. well strong kind chart section ------ */
+
+
+  #well-strong-kind-chart img {
+    width: 91vw;
+  }
 
 }
