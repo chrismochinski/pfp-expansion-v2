@@ -357,10 +357,6 @@ h5.supporting-text {
     font-size: 2em;
   }
 
-  h1.title {
-    font-size: 3rem;
-  }
-
 
   .triple-icon-title {
     font-size: 1.75rem;
@@ -395,7 +391,7 @@ h5.supporting-text {
     font-weight: 700;
     font-size: 3rem;
     margin-inline: auto;
-    margin-block: 2rem -1rem;
+    margin-block: 2rem 0;
   }
 
   .row-1 p, .row-2 p, .row-3 p {
