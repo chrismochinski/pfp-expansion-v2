@@ -69,6 +69,14 @@ ul li {
   list-style-type: circle !important;
 }
 
+.display-desktop {
+  display: block;
+}
+
+.display-tablet {
+  display: none;
+}
+
 
 
 /* ------------- 1. header section ------------ */
@@ -202,7 +210,7 @@ h5.supporting-text {
   padding-bottom: 8px;
 }
 
-.row-1 {
+.row-1, .row-2 {
   text-align: left;
   font-family: var(--roboto);
   display: flex;
@@ -211,10 +219,9 @@ h5.supporting-text {
   justify-content: space-around;
 }
 
-.row-1 h1.row-title{
-  background-image: url("yellow-squiggle-short.svg");
+.row-1 h1.row-title,
+.row-2 h1.row-title{
   background-repeat: no-repeat;
-  background-size: 9.5em;
   background-position: left bottom;
   font-family: var(--zilla_slab);
   color: var(--prussian-blue);
@@ -224,17 +231,28 @@ h5.supporting-text {
   margin-block: 0.5rem;
 }
 
-.row-1 p {
-  margin-block: 1rem;
+.row-1 h1.row-title {
+  background-image: url("yellow-squiggle-longest.svg");
+  background-size: 9.5em;
 }
 
-.row-1 img {
-  width: clamp(283px, 33vw, 507px);
+.row-2 h1.row-title {
+  background-image: url("yellow-squiggle-short.svg");
+  background-size: 7.5em;
+}
+
+.row-1 p, .row-2 p {
+  margin-block: 1rem;
+}
+ 
+.row-1 img, .row-2 img {
+  /* width: clamp(283px, 33vw, 507px); */
+  width: 100%;
   height: auto;
 }
 
 
-
+/* ------------- 4. well strong kind chart section ------------ */
 
 
 
@@ -269,6 +287,28 @@ h5.supporting-text {
 @media (max-width: 991px) {
 
 
+  /* ------------- GLOBALS ------------ */
+
+  .column {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  .display-desktop {
+    display: none;
+  }
+  
+  .display-tablet {
+    display: block;
+  }
+
+
+
   h3.supertitle {
     font-size: 1.5em;
   }
@@ -292,14 +332,34 @@ h5.supporting-text {
 
   /* ------------- 3. what to expect TABLET ------------ */
 
+  #what-to-expect h1.main-title {
+    font-size: 3rem;
+  }
 
-  .row-1 {
+  .row-1, .row-2 {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-around; */
   }
+
+  .row-1 h1.row-title,
+  .row-2 h1.row-title {
+    background-position: center bottom;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-inline: auto;
+    margin-block: 0.5rem;
+  }
+
+  .row-1 p, .row-2 p {
+    font-size: 1.5rem;
+  }
+
+  .row-1 img, .row-2 img {
+    width: 80%;
+  }
+
 
 }
 
