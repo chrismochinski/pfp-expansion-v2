@@ -52,8 +52,26 @@ p {
   font-style: italic;
 }
 
-/* header section 1 */
+.column {
+  width: 30vw;
+  max-width: 455px;
+  min-width: 355px;
+}
 
+ul li {
+  list-style-type: disc;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.inner-list {
+  margin-left: 2em;
+  list-style-type: circle !important;
+}
+
+
+
+/* ------------- 1. header section ------------ */
 
 #header {
   background-image: url("header-assets/purple-squiggles.svg"),
@@ -72,15 +90,13 @@ p {
   background-repeat: no-repeat;
 }
 
-.star {
+img.star {
   margin-inline: auto;
   padding-top: 1.5rem;
   width: 15%;
   min-width: 110px;
 }
 
-.header-text-wrapper {
-}
 
 h3.supertitle {
   background-image: url("yellow-squiggle-longest.svg");
@@ -125,13 +141,13 @@ h1.title {
   transform: scale(1.025);
 }
 
-/*div 2 - triple icon*/
+/* ------------- 2. triple icon section ------------ */
 
 #triple-icon {
   padding-block: 2.25rem;
   background-color: var(--desert-storm);
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -155,14 +171,13 @@ h4.italic {
   font-weight: 400;
   font-size: 1.5rem;
   margin-block: 0;
-
 }
 
 #triple-icon .wrapper img.line {
   width: 80%;
   max-width: 210px;
-  height: 6px;
-
+  min-width: 120px;
+  height: 5px;
 }
 
 h5.supporting-text {
@@ -171,4 +186,181 @@ h5.supporting-text {
   font-weight: 600;
   line-height: 1.125;
   margin-block: 0.25rem;
+}
+
+/* ------------- 3. what to expect section ------------ */
+
+#what-to-expect h1.main-title {
+  background-image: url("red-straight-line.svg");
+  font-family: var(--zilla_slab);
+  color: var(--prussian-blue);
+  font-weight: 600;
+  font-size: 2.75rem;
+  background-size: 7em;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 8px;
+}
+
+.row-1 {
+  text-align: left;
+  font-family: var(--roboto);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row-1 h1.row-title{
+  background-image: url("yellow-squiggle-short.svg");
+  background-repeat: no-repeat;
+  background-size: 9.5em;
+  background-position: left bottom;
+  font-family: var(--zilla_slab);
+  color: var(--prussian-blue);
+  padding-bottom: 16px;
+  font-weight: 700;
+  margin-inline: auto;
+  margin-block: 0.5rem;
+}
+
+.row-1 p {
+  margin-block: 1rem;
+}
+
+.row-1 img {
+  width: clamp(283px, 33vw, 507px);
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  _______       ____  _      ______ _______     _____ _________     ___      ______  _____ 
+ |__   __|/\   |  _ \| |    |  ____|__   __|   / ____|__   __\ \   / / |    |  ____|/ ____|
+    | |  /  \  | |_) | |    | |__     | |     | (___    | |   \ \_/ /| |    | |__  | (___  
+    | | / /\ \ |  _ <| |    |  __|    | |      \___ \   | |    \   / | |    |  __|  \___ \ 
+    | |/ ____ \| |_) | |____| |____   | |      ____) |  | |     | |  | |____| |____ ____) |
+    |_/_/    \_\____/|______|______|  |_|     |_____/   |_|     |_|  |______|______|_____/ 
+
+*/
+
+@media (max-width: 991px) {
+
+
+  h3.supertitle {
+    font-size: 1.5em;
+  }
+
+  h1.title {
+    font-size: 2rem;
+  }
+
+
+  .triple-icon-title {
+    font-size: 1.75rem;
+  }
+
+  h4.italic {
+    font-size: 1.25rem;
+  }
+
+  h5.supporting-text {
+    font-size: 1.25rem;
+  }
+
+  /* ------------- 3. what to expect TABLET ------------ */
+
+
+  .row-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
+
+}
+
+
+/*
+  __  __  ____  ____ _____ _      ______      _____ _________     ___      ______  _____ 
+ |  \/  |/ __ \|  _ \_   _| |    |  ____|    / ____|__   __\ \   / / |    |  ____|/ ____|
+ | \  / | |  | | |_) || | | |    | |__      | (___    | |   \ \_/ /| |    | |__  | (___  
+ | |\/| | |  | |  _ < | | | |    |  __|      \___ \   | |    \   / | |    |  __|  \___ \ 
+ | |  | | |__| | |_) || |_| |____| |____     ____) |  | |     | |  | |____| |____ ____) |
+ |_|  |_|\____/|____/_____|______|______|   |_____/   |_|     |_|  |______|______|_____/ 
+ 
+*/
+
+@media (max-width: 576px) {
+
+
+  .row {
+    padding-inline: 4%;
+  }
+
+  #header {
+    background-size: 34% auto, 17% auto, 33% auto, 28% auto, 29% auto, 33% auto,
+    36% auto, 35% auto, 90% auto;
+  }
+
+  /* triple icon section vertical on mobile */
+  #triple-icon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper:not(:last-of-type) {
+    margin-bottom: 3.5rem;
+
+  }
+
+  #triple-icon .wrapper img.icon {
+    width: 50vw;
+    min-width: 140px;
+    height: auto;
+  }
+
+  #triple-icon .wrapper img.line {
+    width: 90%;
+    max-width: 210px;
+    height: 6px;
+  }
+
+  .triple-icon-title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+  h4.italic {
+    font-size: 1.75rem;
+  }
+
+  h5.supporting-text {
+    font-size: 1.75rem;
+  }
+
+
 }
