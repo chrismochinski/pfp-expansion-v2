@@ -322,7 +322,7 @@ h5.supporting-text {
 }
 
 /* style for all friends names */
-#three-friends h1 {
+.row-4 h1.row-title {
   font-family: var(--zilla_slab);
   font-size: 2.5rem;
   font-weight: 700;
@@ -369,6 +369,7 @@ h1.tre {
   align-self: center;
   justify-content: center;
   gap: 3vw;
+  padding-block: 1rem 2rem;
 }
 
 .title-wrapper {
@@ -413,6 +414,80 @@ a.song-link:hover {
   color: var(--hover-pink);
 }
 
+/* -------------- 8. footer row -------------- */
+
+#footer {
+  background-image: url("exp-footer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: var(--desert-storm);
+  margin-bottom: 0;
+  text-align: center;
+  height: clamp(750px, 41vw, 939px);
+}
+
+#footer h1 {
+  padding-block: 4rem 1rem;
+  font-family: var(--zilla_slab);
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-block: 1rem;
+}
+
+#footer h3 {
+  font-family: var(--roboto);
+  font-size: 1.85rem;
+  max-width: 60vw;
+  font-weight: 400;
+  margin-inline: auto;
+}
+
+.buttons-wrapper {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.button-wrapper h4 {
+  font-family: var(--roboto);
+  color: var(--prussian-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+
+.button-frame {
+  align-items: flex-end;
+  background-color: var(--cherry);
+  border-radius: 40px;
+  display: flex;
+  height: 85px;
+  width: 340px;
+  padding: 0 28px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer a {
+  color: var(--white);
+  font-family: var(--roboto);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration-line: none;
+  margin-inline: auto;
+}
+
+.button-frame:hover {
+  background-color: var(--forgiveness-red);
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 0.25);
+  transition: 175ms ease-in-out;
+  transform: scale(1.025);
+}
+
 /*
   _______       ____  _      ______ _______     _____ _________     ___      ______  _____ 
  |__   __|/\   |  _ \| |    |  ____|__   __|   / ____|__   __\ \   / / |    |  ____|/ ____|
@@ -439,6 +514,10 @@ a.song-link:hover {
 
   ul {
     display: inline-block;
+  }
+
+  ul li {
+    font-size: 1.5rem;
   }
 
   .display-desktop {
@@ -485,7 +564,8 @@ a.song-link:hover {
 
   .row-1,
   .row-2,
-  .row-3 {
+  .row-3,
+  .row-4 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -494,7 +574,8 @@ a.song-link:hover {
 
   .row-1 h1.row-title,
   .row-2 h1.row-title,
-  .row-3 h1.row-title {
+  .row-3 h1.row-title,
+  .row-4 h1.row-title {
     background-position: center bottom;
     font-weight: 700;
     font-size: 3rem;
@@ -528,6 +609,67 @@ a.song-link:hover {
   #new-campus-resources img {
     margin-block: 3rem 2rem;
   }
+
+  /* -------------- 6. three friends TABLET -------------- */
+
+  .three-friends-wrapper {
+    margin-right: unset;
+  }
+
+  .friend-wrapper .friend-image {
+    height: 190px;
+  }
+
+  .row-4 .right {
+    margin-left: unset;
+  }
+
+  .row-4 p {
+    margin-top: 1rem;
+  }
+
+  /* -------------- 7. Music player section - Empathy song TABLET -------------- */
+
+  #music-player {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .player-wrapper {
+    width: 84vw;
+  }
+
+  .audio-player {
+    border-width: 3vw;
+  }
+
+  /* -------------- 8. footer row TABLET -------------- */
+
+  #footer {
+    height: 73vh;
+  }
+
+  #footer h1 {
+    padding-top: 1.5rem;
+    font-size: 2.25rem;
+  }
+
+  #footer h3 {
+    max-width: unset;
+    font-size: 1.5rem;
+  }
+
+  .buttons-wrapper {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .button-wrapper h4 {
+    font-size: 1.75rem;
+  }
 }
 
 /*
@@ -543,6 +685,7 @@ a.song-link:hover {
 @media (max-width: 576px) {
   .row {
     padding-inline: 4%;
+    margin-block: 2.5em;
   }
 
   #header {
@@ -576,6 +719,14 @@ a.song-link:hover {
     font-size: 2.5rem;
   }
 
+  .row-1 h1.row-title,
+  .row-2 h1.row-title,
+  .row-3 h1.row-title,
+  .row-4 h1.row-title {
+    background-position: center bottom;
+    font-size: 2rem;
+  }
+
   h4.italic {
     font-size: 1.75rem;
   }
@@ -584,11 +735,19 @@ a.song-link:hover {
     font-size: 1.75rem;
   }
 
+  p {
+    max-width: 87vw;
+  }
+
   /* ------------- 3. what to expect MOBILE ------------ */
+
+  #what-to-expect h1.main-title {
+    background-size: 4em;
+  }
 
   .row-1 h1.row-title {
     background-image: url("yellow-squiggle-shortest.svg");
-    background-size: 5em;
+    background-size: 8em;
   }
 
   .row-1 img,
@@ -599,7 +758,7 @@ a.song-link:hover {
   /* ------ 4. well strong kind chart section ------ */
 
   #well-strong-kind-chart img {
-    width: 91vw;
+    width: 93vw;
     margin-block: unset;
   }
 
@@ -610,7 +769,97 @@ a.song-link:hover {
   }
 
   #new-campus-resources h1 {
-    background-image: url("yellow-squiggle-shortest.svg");
-    background-size: 5em;
+    background-image: url("yellow-squiggle-longer.svg");
+    background-size: 10em;
+  }
+
+  /* -------------- 6. three friends MOBILE -------------- */
+
+  .row-4 {
+    margin-top: 0;
+  }
+
+  .row-4 h1.row-title {
+    margin-top: 0;
+  }
+
+  .three-friends-wrapper {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .friend-wrapper {
+    height: 375px;
+    margin-inline: auto;
+  }
+
+  .friend-wrapper:not(:last-of-type) {
+    margin-bottom: 1.75rem;
+  }
+
+  .friend-wrapper .friend-image {
+    height: 245px;
+  }
+
+  .sol,
+  .ida,
+  .tre {
+    font-size: 3rem;
+    margin-block: 1rem 0;
+  }
+
+  .friend-word {
+    padding-bottom: 5em;
+  }
+
+  /* -------------- 7. Music player section - Empathy song MOBILE -------------- */
+
+  #music-player {
+    margin-block: 1vh;
+  }
+
+  .note {
+    height: 43px;
+  }
+  .song-title {
+    height: 60px;
+  }
+
+  .player-wrapper {
+    width: 95vw;
+  }
+
+  .song-link {
+    font-size: 1.25rem;
+  }
+
+  /* -------------- 8. footer row MOBILE -------------- */
+
+  #footer {
+    height: 90vh;
+  }
+
+  #footer h1 {
+    font-size: 2rem;
+    margin-inline: 4vw;
+  }
+
+  #footer h3 {
+    font-size: 1.25rem;
+    margin-inline: 4vw;
+  }
+
+  .button-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  #footer .button-frame {
+    width: 256px;
+    height: 70px;
+  }
+
+  #footer a {
+    font-size: 1.25rem;
+    font-weight: 600;
   }
 }
