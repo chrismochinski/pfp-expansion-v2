@@ -690,6 +690,7 @@ a.song-link:hover {
 
   #header {
     background-size: 34% auto, 17% auto, 33% auto, 28% auto, 29% auto, 33% auto, 36% auto, 35% auto, 90% auto;
+    margin-top: 0 !important;
   }
 
   /* triple icon section vertical on mobile */
