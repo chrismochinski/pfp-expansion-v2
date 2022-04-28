@@ -85,19 +85,13 @@ img {
 /* ------------- 1. header section ------------ */
 
 #header {
-  background-image: url("header-assets/purple-squiggles.svg"),
-    url("header-assets/purple-dots-green-square-right.svg"),
-    url("header-assets/orange-blob-left.svg"),
-    url("header-assets/teal-blob-right.svg"),
-    url("header-assets/orange-blob-line-left.svg"),
-    url("header-assets/purple-blob-line-right.svg"),
-    url("header-assets/pink-blob-left.svg"),
-    url("header-assets/green-blob-right.svg"),
+  background-image: url("header-assets/purple-squiggles.svg"), url("header-assets/purple-dots-green-square-right.svg"),
+    url("header-assets/orange-blob-left.svg"), url("header-assets/teal-blob-right.svg"),
+    url("header-assets/orange-blob-line-left.svg"), url("header-assets/purple-blob-line-right.svg"),
+    url("header-assets/pink-blob-left.svg"), url("header-assets/green-blob-right.svg"),
     url("header-assets/blue-blob-center.png");
-  background-position: 0 12px, 97% 13px, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0,
-    50% 0;
-  background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto,
-    28.5% auto, 28% auto, 60% auto;
+  background-position: 0 12px, 97% 13px, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0, 50% 0;
+  background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto, 28.5% auto, 28% auto, 60% auto;
   background-repeat: no-repeat;
 }
 
@@ -358,12 +352,65 @@ h1.tre {
 }
 
 .row-4 .right {
-  margin-left: 1.5vw;
+  margin-left: 2.5vw;
 }
 
 /* support sentence original production right col text */
 .row-4 .right p {
   margin-block: 0 2rem;
+}
+
+/* -------------- 7. Music player section - Empathy song -------------- */
+
+#music-player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.note {
+  height: 65px;
+  margin-right: 1vw;
+}
+
+.song-title {
+  height: 90px;
+  margin-left: 1vw;
+}
+
+.audio-player {
+  border-radius: 56px;
+  border: 1.25vw solid var(--midnight-pearl);
+  width: 654px;
+  margin-block: 1.5em 0.75em;
+}
+
+.player-wrapper {
+  width: 38vw;
+}
+
+.song-link {
+  font-family: var(--roboto);
+  /* color: var(--prussian-blue); */
+  font-size: 1.75em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 150ms ease-in-out;
+}
+
+a.song-link:hover {
+  transition: 150ms ease-in-out;
+  font-size: 1.78em;
+  color: var(--hover-pink);
 }
 
 /*
@@ -499,8 +546,7 @@ h1.tre {
   }
 
   #header {
-    background-size: 34% auto, 17% auto, 33% auto, 28% auto, 29% auto, 33% auto,
-      36% auto, 35% auto, 90% auto;
+    background-size: 34% auto, 17% auto, 33% auto, 28% auto, 29% auto, 33% auto, 36% auto, 35% auto, 90% auto;
   }
 
   /* triple icon section vertical on mobile */
