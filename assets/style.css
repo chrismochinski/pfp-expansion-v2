@@ -300,6 +300,10 @@ h5.supporting-text {
 
 /* -------------- 6 Three Friends + Original Production -------------- */
 
+.row-4 {
+  margin-block: 1rem;
+}
+
 /* the flex row, column on mobile */
 .three-friends-wrapper {
   padding-block: 2.25rem;
@@ -307,12 +311,13 @@ h5.supporting-text {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
+  margin-right: 1.5vw;
 }
 
 /* wrapper around each friend + supporting text */
 .friend-wrapper {
   text-align: center;
-  margin-inline: 1.2vw;
+  margin-inline: 1vw;
 }
 
 /* each friend's phys size and stuff */
@@ -327,7 +332,7 @@ h5.supporting-text {
   font-family: var(--zilla_slab);
   font-size: 2.5rem;
   font-weight: 700;
-  margin-block: 0 1rem;
+  margin-block: 1rem;
 }
 
 h1.sol {
@@ -353,7 +358,7 @@ h1.tre {
 }
 
 .row-4 .right {
-  margin-left: 2vw;
+  margin-left: 1.5vw;
 }
 
 /* support sentence original production right col text */
