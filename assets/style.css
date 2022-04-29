@@ -401,7 +401,6 @@ h1.tre {
 
 .song-link {
   font-family: var(--roboto);
-  /* color: var(--prussian-blue); */
   font-size: 1.75em;
   font-weight: 500;
   text-decoration: none;
@@ -667,8 +666,13 @@ a.song-link:hover {
     gap: 2vw;
   }
 
+  .button-wrapper:first-of-type {
+    margin-bottom: 0.75rem;
+  }
+
   .button-wrapper h4 {
     font-size: 1.75rem;
+    margin-bottom: .75rem;
   }
 }
 
@@ -830,8 +834,12 @@ a.song-link:hover {
     width: 95vw;
   }
 
-  .song-link {
+  a.song-link {
     font-size: 1.25rem;
+  }
+
+  a.song-link:hover {
+    font-size: 1.28rem;
   }
 
   /* -------------- 8. footer row MOBILE -------------- */
