@@ -16,12 +16,12 @@
 
   width: 100%;
 }
-
-body {
-  text-align: center;
-  background-color: var(--white);
-  margin: 0;
-}
+/* 
+@media (min-width: 48.0625em) {
+  body {
+    width: calc(100vw - 296px);
+  }
+} */
 
 .row {
   margin-inline: auto;
@@ -275,7 +275,7 @@ h5.supporting-text {
 /* ------------- 4. well strong kind chart section ------------ */
 
 #well-strong-kind-chart img {
-  width: 85vw;
+  width: 94%;
   max-width: 985px;
   margin-inline: auto;
   margin-block: 1rem;
@@ -606,7 +606,7 @@ a.song-link:hover {
   /* ------------- 4. well strong kind chart TABLET ------------ */
 
   #well-strong-kind-chart img {
-    width: 86vw;
+    width: 90%;
   }
 
   #new-campus-resources img {
@@ -676,7 +676,7 @@ a.song-link:hover {
 
   .button-wrapper h4 {
     font-size: 1.75rem;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -767,7 +767,7 @@ a.song-link:hover {
   /* ------ 4. well strong kind chart section ------ */
 
   #well-strong-kind-chart img {
-    width: 93vw;
+    width: 96%;
     margin-block: unset;
   }
 
