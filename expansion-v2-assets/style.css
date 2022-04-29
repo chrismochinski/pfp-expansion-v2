@@ -837,7 +837,7 @@ a.song-link:hover {
   }
 
   p {
-    max-width: 87vw;
+    max-width: 100%;
   }
 
   /* ------------- 3. what to expect MOBILE ------------ */
