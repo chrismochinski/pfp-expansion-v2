@@ -16,6 +16,13 @@
     />
     <link rel="stylesheet" href="./expansion-v2-assets/style.css" />
     <title>PurposeFull People Expansion</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.requestAnimationFrame(() => {
+          window.top.postMessage("curriculum_page_ready");
+        });
+      });
+    </script>
   </head>
 
   <body>
