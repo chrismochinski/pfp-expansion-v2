@@ -95,6 +95,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.header-text-wrapper {
+  padding-top: 0.8vw;
+}
+
 img.star {
   margin-inline: auto;
   padding-top: 1.5rem;
