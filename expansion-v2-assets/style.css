@@ -29,6 +29,12 @@ body {
   }
 }
 
+@media (min-width: 2200px) {
+  #header {
+    background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto, 28.5% auto, 28% auto, 60% 25% !important;
+  }
+}
+
 .row {
   margin-inline: auto;
   position: relative;
