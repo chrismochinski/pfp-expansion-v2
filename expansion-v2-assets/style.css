@@ -278,6 +278,13 @@ h5.supporting-text {
   height: auto;
 }
 
+.tree {
+  border-radius: 24px;
+  border: 10px solid white;
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 25%);
+  width: 100%;
+}
+
 /* ------------- 4. well strong kind chart section ------------ */
 
 #well-strong-kind-chart img {
@@ -673,7 +680,7 @@ a.song-link:hover {
   .row-1 img,
   .row-2 img,
   .row-3 img {
-    width: 80%;
+    width: 94%;
   }
 
   /* ------------- 4. well strong kind chart TABLET ------------ */
@@ -691,6 +698,7 @@ a.song-link:hover {
 
   .three-friends-wrapper {
     margin-right: unset;
+    width: 95%;
   }
 
   .friend-wrapper {
@@ -703,7 +711,7 @@ a.song-link:hover {
   }
 
   .friend-wrapper .friend-image {
-    height: 190px !important;
+    height: 180px !important;
   }
 
   .friend-word {
