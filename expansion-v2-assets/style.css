@@ -849,7 +849,7 @@ a.song-link:hover {
   /* -------------- 8. footer row MOBILE -------------- */
 
   #footer {
-    height: 90vh;
+    height: 47rem; /* 90vh cut off bottom button on iPhone */
   }
 
   #footer h1 {
