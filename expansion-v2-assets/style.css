@@ -429,7 +429,6 @@ h1.tre {
   width: 38vw;
 }
 
-
 /* -------------- 8. footer row -------------- */
 
 #footer {
@@ -877,6 +876,10 @@ h1.tre {
 
   /* -------------- 6. three friends MOBILE -------------- */
 
+  #three-friends {
+    margin-bottom: 1rem;
+  }
+
   .row-4 {
     margin-top: 0;
   }
@@ -935,7 +938,8 @@ h1.tre {
   /* -------------- 8. footer row MOBILE -------------- */
 
   #footer {
-    height: 47rem; /* 90vh cut off bottom button on iPhone */
+    height: 46rem; /* 90vh cut off bottom button on iPhone */
+    margin-top: 1rem;
   }
 
   #footer h1 {
