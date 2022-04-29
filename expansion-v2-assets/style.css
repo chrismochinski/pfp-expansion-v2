@@ -423,19 +423,6 @@ h1.tre {
   width: 38vw;
 }
 
-.song-link {
-  font-family: var(--roboto);
-  font-size: 1.5em;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 150ms ease-in-out;
-}
-
-a.song-link:hover {
-  transition: 150ms ease-in-out;
-  font-size: 1.78em;
-  color: var(--hover-pink);
-}
 
 /* -------------- 8. footer row -------------- */
 
@@ -745,7 +732,7 @@ a.song-link:hover {
   /* -------------- 8. footer row TABLET -------------- */
 
   #footer {
-    height: 73vh;
+    height: 78vh;
   }
 
   #footer h1 {
@@ -767,7 +754,7 @@ a.song-link:hover {
   }
 
   .button-wrapper:first-of-type {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .button-wrapper h4 {
@@ -937,14 +924,6 @@ a.song-link:hover {
 
   .player-wrapper {
     width: 95vw;
-  }
-
-  a.song-link {
-    font-size: 1.25rem;
-  }
-
-  a.song-link:hover {
-    font-size: 1.28rem;
   }
 
   /* -------------- 8. footer row MOBILE -------------- */
