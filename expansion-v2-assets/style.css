@@ -279,7 +279,7 @@ h1.title {
 
 .row-3 h1.row-title {
   background-image: url("yellow-squiggle-longest.svg");
-  background-size: 11.5em;
+  background-size: 10.75em;
 }
 
 .row-4 h1.row-title {
@@ -311,42 +311,69 @@ h1.title {
 }
 
 /* ------------- 4. well strong kind chart section ------------ */
-
+/* 
 #well-strong-kind-chart img {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* max-width: 985px; */
   margin-inline: auto;
   margin-block: 1rem;
-}
+} */
 
-/* -------------- 5. new campus resources section -------------- */
+/* -------------- 4.5. to-prepare section -------------- */
 
-#new-campus-resources {
+#to-prepare {
   background-color: var(--desert-storm);
-  padding-block: 3.5rem;
+  padding-block: 2rem 3.5rem;
 }
 
-#new-campus-resources ul {
-  margin-bottom: 2rem;
-}
-
-#new-campus-resources ul li {
-  list-style-type: none;
-}
-
-#new-campus-resources ul li:first-of-type {
+#to-prepare .main-title {
+  background-image: url("red-straight-line.svg");
+  font-family: var(--zilla_slab);
+  color: var(--prussian-blue);
+  font-weight: 600;
+  font-size: 2.75rem;
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   padding-bottom: 8px;
 }
 
-#new-campus-resources ul li.inner-no-number {
+
+#to-prepare ul li {
+  font-family: var(--roboto);
+}
+
+#to-prepare ul li.inner-no-number {
   padding-block: 8px;
   margin-left: 2em;
 }
 
-#new-campus-resources p {
+#to-prepare li.line-pad-top {
+  padding-top: 8px;
+}
+
+#to-prepare p {
   line-height: 1;
+}
+
+#to-prepare a {
+  color: var(--cherry);
+  text-decoration: none;
+}
+
+#to-prepare a:hover {
+  text-decoration: underline;
+}
+
+
+/* -------------- 5. new campus resources section -------------- */
+
+#new-campus-resources {
+}
+
+#new-campus-resources ul {
+  margin-bottom: 2rem;
 }
 
 /* -------------- 6 Three Friends + Original Production -------------- */
