@@ -79,7 +79,7 @@ ul li {
 
 .inner-list {
   margin-left: 2em;
-  list-style-type: circle !important;
+  list-style-type: circle;
 }
 
 .display-desktop {
@@ -161,52 +161,60 @@ h1.title {
   transform: scale(1.025);
 }
 
-/* ------------- 2. triple icon section ------------ */
+/* ------------- 2. NEW VID EMBED (triple icon) section ------------ */
 
-#triple-icon {
-  padding-block: 2.25rem;
+#new-vid-embed {
+  padding-block: 3rem;
   background-color: var(--desert-storm);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#triple-icon .wrapper img.icon {
+#new-vid-embed .video {
+  border: 12px solid #ffffff;
+  border-radius: 24px;
+  box-shadow: 1px 4px 8px 5px rgb(0 0 0 / 0.15);
+  aspect-ratio: 16/9;
+  height: 50%;
+}
+
+/* #new-vid-embed .wrapper img.icon {
   width: clamp(56px, 10vw, 144px);
   height: auto;
-}
-
-.triple-icon-title {
+} */
+/* 
+.new-vid-embed-title {
   color: var(--prussian-blue);
   font-family: var(--zilla_slab);
   font-size: 2.25rem;
   font-weight: 600;
   margin-block: 1.5rem 0;
-}
+} */
 
-h4.italic {
+/* h4.italic {
   font-style: italic;
   font-family: var(--roboto);
   font-weight: 400;
   font-size: 1.5rem;
   margin-block: 0;
-}
+} */
 
-#triple-icon .wrapper img.line {
+/* #new-vid-embed .wrapper img.line {
   width: 80%;
   max-width: 210px;
   min-width: 120px;
   height: 5px;
-}
+} */
 
-h5.supporting-text {
+/* h5.supporting-text {
   font-family: var(--roboto);
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.125;
   margin-block: 0.25rem;
-}
+} */
 
 /* ------------- 3. what to expect section (and 5. new campus resources ------------ */
 
@@ -225,6 +233,7 @@ h5.supporting-text {
 /* general row text and alignment */
 .row-1,
 .row-2,
+.row-2-b,
 .row-3,
 .row-4 {
   text-align: left;
@@ -238,6 +247,7 @@ h5.supporting-text {
 /* row titles - zilla blue */
 .row-1 h1.row-title,
 .row-2 h1.row-title,
+.row-2-b h1.row-title,
 .row-3 h1.row-title,
 .row-4 h1.row-title {
   background-repeat: no-repeat;
@@ -250,6 +260,7 @@ h5.supporting-text {
   margin-block: 0.5rem;
 }
 
+/* wavy underlines and sizes */
 .row-1 h1.row-title {
   background-image: url("yellow-squiggle-longest.svg");
   background-size: 9.5em;
@@ -257,12 +268,18 @@ h5.supporting-text {
 
 .row-2 h1.row-title {
   background-image: url("yellow-squiggle-short.svg");
-  background-size: 7.5em;
+  background-size: 8.5em;
+}
+
+.row-2-b h1.row-title {
+  background-image: url("yellow-squiggle-longer.svg");
+  padding-bottom: 16px;
+  background-size: 11em;
 }
 
 .row-3 h1.row-title {
   background-image: url("yellow-squiggle-longest.svg");
-  background-size: 10.75em;
+  background-size: 11.5em;
 }
 
 .row-4 h1.row-title {
@@ -272,12 +289,14 @@ h5.supporting-text {
 
 .row-1 p,
 .row-2 p,
+.row-2-b p,
 .row-3 p {
   margin-block: 1rem;
 }
 
 .row-1 img,
 .row-2 img,
+.row-2-b img,
 .row-3 img {
   /* width: clamp(283px, 33vw, 507px); */
   width: 100%;
@@ -311,6 +330,19 @@ h5.supporting-text {
 
 #new-campus-resources ul {
   margin-bottom: 2rem;
+}
+
+#new-campus-resources ul li {
+  list-style-type: none;
+}
+
+#new-campus-resources ul li:first-of-type {
+  padding-bottom: 8px;
+}
+
+#new-campus-resources ul li.inner-no-number {
+  padding-block: 8px;
+  margin-left: 2em;
 }
 
 #new-campus-resources p {
@@ -618,7 +650,7 @@ h1.tre {
     font-size: 2em;
   }
 
-  .triple-icon-title {
+  .new-vid-embed-title {
     font-size: 1.75rem;
   }
 
@@ -794,7 +826,7 @@ h1.tre {
   }
 
   /* triple icon section vertical on mobile */
-  #triple-icon {
+  #new-vid-embed {
     flex-direction: column;
     align-items: center;
   }
@@ -803,19 +835,19 @@ h1.tre {
     margin-bottom: 3.5rem;
   }
 
-  #triple-icon .wrapper img.icon {
+  #new-vid-embed .wrapper img.icon {
     width: 50vw;
     min-width: 140px;
     height: auto;
   }
 
-  #triple-icon .wrapper img.line {
+  #new-vid-embed .wrapper img.line {
     width: 90%;
     max-width: 210px;
     height: 6px;
   }
 
-  .triple-icon-title {
+  .new-vid-embed-title {
     margin-top: 1rem;
     font-size: 2.5rem;
   }
