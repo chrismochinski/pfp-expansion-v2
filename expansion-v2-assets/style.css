@@ -337,20 +337,30 @@ h1.title {
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 8px;
+  margin-bottom: 0.75em;
 }
 
+#to-prepare ul li.title-item {
+  font-size: 1.5rem;
+}
 
 #to-prepare ul li {
   font-family: var(--roboto);
+  list-style-type: none;
+}
+
+#to-prepare ul li:first-of-type {
+  margin-bottom: 8px;
 }
 
 #to-prepare ul li.inner-no-number {
-  padding-block: 8px;
-  margin-left: 2em;
+  padding-block: 12px;
+  margin-left: 2.5em;
+  font-size: 1.5em;
 }
 
 #to-prepare li.line-pad-top {
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 #to-prepare p {
@@ -366,10 +376,20 @@ h1.title {
   text-decoration: underline;
 }
 
-
 /* -------------- 5. new campus resources section -------------- */
 
-#new-campus-resources {
+#new-campus-resources h1.main-title {
+  background-image: url("red-straight-line.svg");
+  font-family: var(--zilla_slab);
+  color: var(--prussian-blue);
+  font-weight: 600;
+  font-size: 2.75rem;
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 8px;
+  margin-bottom: 0.75em;
+  margin-top: 0;
 }
 
 #new-campus-resources ul {
@@ -562,6 +582,11 @@ h1.tre {
   transform: scale(1.025);
 }
 
+/* -------------- ⬇️ RANDOM 1200 STYLES ⬇️ -------------- */
+/* -------------- ⬇️ RANDOM 1200 STYLES ⬇️ -------------- */
+/* -------------- ⬇️ RANDOM 1200 STYLES ⬇️ -------------- */
+
+
 @media (max-width: 1200px) {
   ul li {
     font-size: 1.125em;
@@ -569,6 +594,14 @@ h1.tre {
 
   ul {
     padding-left: 1.75em;
+  }
+
+  #header h1.title {
+    font-size: 2.75rem;
+  }
+
+  .main-title {
+    font-size: 2rem !important;
   }
 
   .inner-list {
@@ -692,12 +725,13 @@ h1.tre {
   /* ------------- 3. what to expect TABLET ------------ */
 
   #what-to-expect h1.main-title {
-    font-size: 3.5rem;
+    font-size: 3.25rem !important;
     margin-block: 0 1.25rem;
   }
 
   .row-1,
   .row-2,
+  .row-2-b,
   .row-3,
   .row-4 {
     text-align: center;
@@ -708,28 +742,32 @@ h1.tre {
 
   .row-1 h1.row-title,
   .row-2 h1.row-title,
+  .row-2-b h1.row-title,
   .row-3 h1.row-title,
   .row-4 h1.row-title {
     background-position: center bottom;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-inline: auto;
     margin-block: 2rem 0;
   }
 
   .row-1 p,
   .row-2 p,
+  .row-2-b p,
   .row-3 p {
     font-size: 1.5rem;
   }
 
   .row-1 img,
-  .row-2 img {
+  .row-2 img,
+  .row-2-b img{
     margin-block: -1rem;
   }
 
   .row-1 img,
   .row-2 img,
+  .row-2-b img,
   .row-3 img {
     width: 94%;
   }
