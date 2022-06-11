@@ -66,9 +66,11 @@ p {
 }
 
 .column {
-  width: 26vw;
+  /* width: 26vw;
   max-width: 454px;
-  min-width: 332px;
+  min-width: 332px; */
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
 ul li {
@@ -206,6 +208,15 @@ h1.title {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  gap: 2.25rem;
+  margin-block: 1.75rem;
+}
+
+#what-to-expect .right .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* row titles - zilla blue */
@@ -218,7 +229,7 @@ h1.title {
   background-position: left bottom;
   font-family: var(--zilla_slab);
   color: var(--prussian-blue);
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   font-weight: 700;
   margin-inline: auto;
   margin-block: 0.5rem;
@@ -258,18 +269,42 @@ h1.title {
   margin-block: 1rem;
 }
 
+#what-to-expect img {
+  width: 100%;
+  height: auto;
+}
+
 .row-1 img.monitor,
 .row-2 img.monitor,
-.row-2-b img.monitor,
-.row-3 img {
-  /* width: clamp(283px, 33vw, 507px); */
+.row-2-b img.monitor {
+  width: 94% !important;
   /* width: 100%;
-  height: auto;
-  padding-inline: 1.5em;
+  height: auto; */
+  /* padding-inline: 1.5em; */
   border: 12px solid #000;
   border-radius: 14px 12px 0 0;
   box-shadow: 1px 4px 7px 4px rgb(0 0 0 / 0.15);
-  z-index: 2; */
+  z-index: 2;
+}
+
+.left.column.display-tablet.computer-monitor {
+  display: none !important;
+}
+
+.monitor-base {
+  z-index: 5;
+}
+
+/* new gif monitor treatment - container */
+.computer-monitor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-3 img {
+  border: 10px solid white;
+  border-radius: 24px;
 }
 
 .tree {
@@ -322,14 +357,40 @@ h1.title {
   margin-bottom: 8px;
 }
 
-#to-prepare ul li.inner-no-number {
-  padding-block: 12px;
-  margin-left: 2.5em;
-  font-size: 1.5em;
+#to-prepare ul li.inner-no-number a {
+  display: inline-block;
+  position: relative;
+  transition: transform 300ms ease-in-out;
 }
 
-#to-prepare li.line-pad-top {
-  padding-top: 12px;
+#to-prepare ul li.inner-no-number:hover {
+  text-decoration: none !important;
+}
+
+#to-prepare ul li.inner-no-number a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  transform-origin: center;
+  transition: transform 200ms ease-in-out;
+}
+
+#to-prepare ul li.inner-no-number a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+#to-prepare ul span.flex-list {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-block: 1em;
 }
 
 #to-prepare p {
@@ -341,7 +402,7 @@ h1.title {
   text-decoration: none;
 }
 
-#to-prepare a:hover {
+#to-prepare .title-item a:hover {
   text-decoration: underline;
 }
 
@@ -624,6 +685,12 @@ h1.tre {
   #footer a {
     font-size: 1.25em;
   }
+
+  .row-1 img.monitor,
+  .row-2 img.monitor,
+  .row-2-b img.monitor {
+    width: 92% !important;
+  }
 }
 
 /*
@@ -644,6 +711,10 @@ h1.tre {
     min-width: unset;
     max-width: unset;
     margin-inline: auto;
+  }
+
+  .column .display-tablet {
+    margin-block: 2.5rem;
   }
 
   .column img {
@@ -730,10 +801,12 @@ h1.tre {
     font-size: 1.5rem;
   }
 
-  .row-1 img,
-  .row-2 img,
-  .row-2-b img {
-    margin-block: -1rem;
+  .left.column.display-tablet.computer-monitor { /* idea //fix */
+    display: block !important;
+  }
+
+  .monitor-base {
+    width: 97% !important;
   }
 
   .row-1 img,
@@ -751,7 +824,7 @@ h1.tre {
   }
 
   #new-campus-resources img {
-    margin-block: 3rem 2rem;
+    /* margin-block: 3rem 2rem; */
   }
 
   /* -------------- 6. three friends TABLET -------------- */
@@ -919,10 +992,10 @@ h1.tre {
     background-size: 8em;
   }
 
-  .row-1 img,
+  /* .row-1 img,
   .row-3 img {
     margin-block: 1rem;
-  }
+  } */
 
   /* ------ 4. well strong kind chart section ------ */
 
