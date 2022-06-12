@@ -249,7 +249,7 @@ h1.title {
 
 .row-2-b h1.row-title {
   background-image: url("yellow-squiggle-longer.svg");
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   background-size: 11em;
 }
 
@@ -278,7 +278,7 @@ h1.title {
 .row-1 img.monitor,
 .row-2 img.monitor,
 .row-2-b img.monitor {
-  width: 94% !important;
+  width: 93% !important;
   /* width: 100%;
   height: auto; */
   /* padding-inline: 1.5em; */
@@ -393,7 +393,7 @@ h1.title {
   justify-content: center;
   gap: 5vw;
   padding-block: 1em;
-  margin-right: 1em;
+  margin-right: 2vw;
 }
 
 #to-prepare p {
@@ -633,6 +633,14 @@ h1.tre {
     padding-left: 1.75em;
   }
 
+  .row-1,
+.row-2,
+.row-2-b,
+.row-3,
+.row-4 {
+  gap: 2rem;
+}
+
   #header h1.title {
     font-size: 2.75rem;
   }
@@ -647,6 +655,8 @@ h1.tre {
 
   .row-4 {
     flex-direction: column;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
   .friend-wrapper {
