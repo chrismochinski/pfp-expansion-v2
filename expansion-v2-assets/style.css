@@ -54,7 +54,7 @@ p {
   font-family: var(--roboto);
   font-size: 1.55rem;
   font-weight: normal;
-  margin-top: 2.25rem;
+  margin-block: 2.25rem 0;
 }
 
 .bold {
@@ -167,7 +167,7 @@ h1.title {
 /* ------------- 2. NEW VID EMBED (triple icon) section ------------ */
 
 #new-vid-embed {
-  padding-block: 3rem;
+  padding-block: 4rem;
   background-color: var(--desert-storm);
   display: flex;
   flex-direction: column;
@@ -194,6 +194,7 @@ h1.title {
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 8px;
+  margin-block: 0 3rem;
 }
 
 /* general row text and alignment */
@@ -208,8 +209,8 @@ h1.title {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  gap: 2.25rem;
-  margin-block: 1.75rem;
+  gap: 3rem;
+  margin-block: 2rem;
 }
 
 #what-to-expect .right .column {
@@ -353,9 +354,9 @@ h1.title {
   list-style-type: none;
 }
 
-#to-prepare ul li:first-of-type {
+/* #to-prepare ul li:first-of-type {
   margin-bottom: 8px;
-}
+} */
 
 #to-prepare ul li.inner-no-number a {
   display: inline-block;
@@ -389,8 +390,10 @@ h1.title {
   font-size: 1.5em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5vw;
   padding-block: 1em;
+  margin-right: 1em;
 }
 
 #to-prepare p {
@@ -430,6 +433,7 @@ h1.title {
 
 .row-4 {
   margin-block: 1rem;
+  gap: 0;
 }
 
 /* the flex row, column on mobile */
@@ -456,6 +460,7 @@ h1.title {
 
   object-fit: cover;
 }
+
 
 /* style for all friends names */
 .row-4 h1.row-title {
@@ -492,7 +497,7 @@ h1.tre {
 }
 
 .row-4 .right {
-  margin-left: 2.5vw;
+  margin-left: 1.5vw;
 }
 
 /* support sentence original production right col text */
@@ -768,7 +773,7 @@ h1.tre {
 
   #what-to-expect h1.main-title {
     font-size: 3.25rem !important;
-    margin-block: 0 1.25rem;
+    margin-block: 0;
   }
 
   .row-1,
@@ -801,7 +806,7 @@ h1.tre {
     font-size: 1.5rem;
   }
 
-  .left.column.display-tablet.computer-monitor { /* idea //fix */
+  .left.column.display-tablet.computer-monitor {
     display: block !important;
   }
 
@@ -816,15 +821,10 @@ h1.tre {
     width: 94%;
   }
 
-  /* ------------- 4. well strong kind chart TABLET ------------ */
+  /* ------------ 4 NEW 🆕 TO PREPARE --------- */
 
-  #well-strong-kind-chart img {
-    width: 99%;
-    margin-inline: auto;
-  }
-
-  #new-campus-resources img {
-    /* margin-block: 3rem 2rem; */
+  #to-prepare a {
+    text-decoration: underline;
   }
 
   /* -------------- 6. three friends TABLET -------------- */
@@ -851,12 +851,21 @@ h1.tre {
     font-size: 1.5em;
   }
 
+  #three-friends .row-4 {
+    gap: 1rem;
+  }
+
+
   .row-4 .right {
     margin-left: unset;
   }
 
+  .row-4 h1 {
+    margin-top: 0;
+  }
+
   .row-4 p {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   /* -------------- 7. Music player section - Empathy song TABLET -------------- */
@@ -1002,6 +1011,17 @@ h1.tre {
   #well-strong-kind-chart img {
     width: 96%;
     margin-block: unset;
+  }
+
+  /* -------------- 4.5. to-prepare section -------------- */
+
+  /* #to-prepare ul li.title-item {
+    font-size: 1.25em;
+  } */
+
+  #to-prepare ul span.flex-list {
+    display: inline-flex;
+    flex-direction: column;
   }
 
   /* --------5. new campus resources section -------- */
