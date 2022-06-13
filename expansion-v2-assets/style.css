@@ -982,10 +982,12 @@ h1.tre {
 
   .row-1 h1.row-title,
   .row-2 h1.row-title,
+  .row-2-b h1.row-title,
   .row-3 h1.row-title,
   .row-4 h1.row-title {
     background-position: center bottom;
     font-size: 2rem;
+    margin-top: 1rem;
   }
 
   h4.italic {
