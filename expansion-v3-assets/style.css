@@ -348,10 +348,6 @@ h1.title {
   list-style-type: none;
 }
 
-/* #to-prepare ul li:first-of-type {
-  margin-bottom: 8px;
-} */
-
 #to-prepare ul li.inner-no-number a {
   display: inline-block;
   position: relative;
@@ -449,7 +445,6 @@ h1.title {
 /* each friend's phys size and stuff */
 .friend-wrapper img {
   width: auto;
-  /* height: 232px; */
   height: clamp(142px, 13vw, 232px);
 
   object-fit: cover;
@@ -614,8 +609,6 @@ h1.tre {
   transform: scale(1.025);
 }
 
-/* -------------- ⬇️ RANDOM 1200 STYLES ⬇️ -------------- */
-/* -------------- ⬇️ RANDOM 1200 STYLES ⬇️ -------------- */
 /* -------------- ⬇️ RANDOM 1200 STYLES ⬇️ -------------- */
 
 @media (max-width: 1200px) {
@@ -1007,11 +1000,6 @@ h1.tre {
     background-size: 8em;
   }
 
-  /* .row-1 img,
-  .row-3 img {
-    margin-block: 1rem;
-  } */
-
   /* ------ 4. well strong kind chart section ------ */
 
   #well-strong-kind-chart img {
@@ -1020,10 +1008,6 @@ h1.tre {
   }
 
   /* -------------- 4.5. to-prepare section -------------- */
-
-  /* #to-prepare ul li.title-item {
-    font-size: 1.25em;
-  } */
 
   #to-prepare ul span.flex-list {
     display: inline-flex;
