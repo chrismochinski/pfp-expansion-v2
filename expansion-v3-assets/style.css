@@ -118,13 +118,13 @@ img.star {
 }
 
 h3.supertitle {
-  background-image: url("yellow-squiggle-longest.svg");
+  background-image: url("yellow-squiggle-shortest.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 10.5em;
+  background-size: 5em;
   color: var(--prussian-blue);
   font-family: var(--thasadith);
-  font-size: 1.75rem;
+  font-size: 2rem;
   padding-bottom: 11px;
   margin-bottom: -8px;
 }
@@ -187,7 +187,7 @@ h1.title {
   color: var(--prussian-blue);
   font-weight: 600;
   font-size: 2.75rem;
-  background-size: 7em;
+  background-size: 8.5em;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 8px;
@@ -298,26 +298,16 @@ h1.title {
 }
 
 .row-3 img {
-  border: 10px solid white;
-  border-radius: 24px;
+  /* border: 10px solid white;
+  border-radius: 24px; */
 }
 
 .tree {
-  border-radius: 24px;
+  /* border-radius: 24px;
   border: 10px solid white;
-  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 25%);
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 25%); */
   width: 100%;
 }
-
-/* ------------- 4. well strong kind chart section ------------ */
-/* 
-#well-strong-kind-chart img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-inline: auto;
-  margin-block: 1rem;
-} */
 
 /* -------------- 4.5. to-prepare section -------------- */
 
@@ -401,6 +391,11 @@ h1.title {
 
 /* -------------- 5. new campus resources section -------------- */
 
+#new-campus-resources {
+  background-color: var(--desert-storm);
+  padding-block: 3rem 3.5rem;
+}
+
 #new-campus-resources h1.main-title {
   background-image: url("red-straight-line.svg");
   font-family: var(--zilla_slab);
@@ -450,7 +445,6 @@ h1.title {
   object-fit: cover;
 }
 
-
 /* style for all friends names */
 .row-4 h1.row-title {
   font-family: var(--zilla_slab);
@@ -492,6 +486,13 @@ h1.tre {
 /* support sentence original production right col text */
 .row-4 .right p {
   margin-block: 0 1rem;
+}
+
+.row-4 .right h6.original-production-new-p {
+  font-size: 1.25rem !important;
+  font-family: var(--roboto);
+  font-weight: normal;
+  margin-top: 2rem;
 }
 
 /* -------------- 7. Music player section - Empathy song -------------- */
@@ -538,14 +539,15 @@ h1.tre {
 /* -------------- 8. footer row -------------- */
 
 #footer {
+  /* padding-top: 2rem; */
   background-image: url("exp-footer.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-color: var(--desert-storm);
+  /* background-color: var(--desert-storm); */
   margin-bottom: 0;
   text-align: center;
-  height: clamp(750px, 41vw, 939px);
+  height: clamp(406px, 27vw, 600px);
 }
 
 #footer h1 {
@@ -621,12 +623,12 @@ h1.tre {
   }
 
   .row-1,
-.row-2,
-.row-2-b,
-.row-3,
-.row-4 {
-  gap: 2rem;
-}
+  .row-2,
+  .row-2-b,
+  .row-3,
+  .row-4 {
+    gap: 2rem;
+  }
 
   #header h1.title {
     font-size: 2.75rem;
@@ -852,7 +854,6 @@ h1.tre {
     gap: 1rem;
   }
 
-
   .row-4 .right {
     margin-left: unset;
   }
@@ -884,7 +885,7 @@ h1.tre {
   /* -------------- 8. footer row TABLET -------------- */
 
   #footer {
-    height: 78vh;
+    height: 46vh; //fix
   }
 
   #footer h1 {
@@ -1089,7 +1090,7 @@ h1.tre {
   /* -------------- 8. footer row MOBILE -------------- */
 
   #footer {
-    height: 46rem; /* 90vh cut off bottom button on iPhone */
+    height: 29rem; /* 90vh cut off bottom button on iPhone */
     margin-top: 1rem;
   }
 
