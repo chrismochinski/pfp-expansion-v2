@@ -489,7 +489,7 @@ h1.tre {
 }
 
 .row-4 .right h6.original-production-new-p {
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-family: var(--roboto);
   font-weight: normal;
   margin-top: 2rem;
@@ -866,6 +866,11 @@ h1.tre {
     margin-top: 3rem;
   }
 
+  .row-4 .right h6.original-production-new-p {
+    font-size: 1.5em;
+    margin-top: -0.25em;
+  }
+
   /* -------------- 7. Music player section - Empathy song TABLET -------------- */
 
   #music-player {
@@ -1068,6 +1073,10 @@ h1.tre {
 
   .friend-word {
     padding-bottom: 5em;
+  }
+
+  .row-4 .right h6.original-production-new-p {
+    margin-block: -1.75em 0;
   }
 
   /* -------------- 7. Music player section - Empathy song MOBILE -------------- */
