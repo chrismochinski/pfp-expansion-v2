@@ -297,15 +297,7 @@ h1.title {
   align-items: center;
 }
 
-.row-3 img {
-  /* border: 10px solid white;
-  border-radius: 24px; */
-}
-
 .tree {
-  /* border-radius: 24px;
-  border: 10px solid white;
-  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 25%); */
   width: 100%;
 }
 
@@ -539,12 +531,10 @@ h1.tre {
 /* -------------- 8. footer row -------------- */
 
 #footer {
-  /* padding-top: 2rem; */
   background-image: url("exp-footer.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
-  /* background-color: var(--desert-storm); */
   margin-bottom: 0;
   text-align: center;
   height: clamp(406px, 27vw, 600px);
@@ -890,7 +880,7 @@ h1.tre {
   /* -------------- 8. footer row TABLET -------------- */
 
   #footer {
-    height: 46vh; //fix
+    height: 46vh;
   }
 
   #footer h1 {
