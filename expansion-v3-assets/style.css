@@ -6,10 +6,8 @@
   --midnight-pearl: #70316e;
   --prussian-blue: #0d3258;
   --white: #ffffff;
-
   --hover-pink: #9a3897;
   --tre-green: #9db83f;
-
   --roboto: "Roboto", Helvetica;
   --thasadith: "Thasadith", Helvetica;
   --zilla_slab: "Zilla Slab", Helvetica;
@@ -194,7 +192,6 @@ h1.title {
   margin-block: 0 3rem;
 }
 
-/* general row text and alignment */
 .row-1,
 .row-2,
 .row-2-b,
@@ -217,7 +214,6 @@ h1.title {
   align-items: center;
 }
 
-/* row titles - zilla blue */
 .row-1 h1.row-title,
 .row-2 h1.row-title,
 .row-2-b h1.row-title,
@@ -233,7 +229,6 @@ h1.title {
   margin-block: 0.5rem;
 }
 
-/* wavy underlines and sizes */
 .row-1 h1.row-title {
   background-image: url("yellow-squiggle-longest.svg");
   background-size: 9.5em;
