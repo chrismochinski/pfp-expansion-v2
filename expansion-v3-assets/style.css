@@ -21,6 +21,8 @@ body {
   margin: 0;
 }
 
+
+
 @media (min-width: 48.0625em) {
   body {
     width: calc(100vw - 300px) !important; /* compensate for iframe & left menu bar*/
@@ -267,6 +269,7 @@ h1.title {
   height: auto;
 }
 
+/* new gif monitor treatment - container */
 .row-1 img.monitor,
 .row-2 img.monitor,
 .row-2-b img.monitor {
@@ -285,12 +288,12 @@ h1.title {
   z-index: 5;
 }
 
-/* new gif monitor treatment - container */
 .computer-monitor {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/* end monitor treatment */
 
 .tree {
   width: 100%;
